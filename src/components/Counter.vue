@@ -48,7 +48,7 @@ export default {
     },
   },
   created: function () {
-    this.count = parseInt(localStorage.getItem(this.user.id));
+    this.count = parseInt(localStorage.getItem(this.user.id)) || 0;
   },
 };
 </script>
